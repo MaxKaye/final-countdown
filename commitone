@@ -1,0 +1,18 @@
+function countDown() {
+      console.log("down")
+    }
+    var stopwatch;
+    $("#start").click(function(){
+      stopwatch = setInterval(countDown, 1000);
+      <button id="start"> Start </button>
+    });
+    $("#stop").click(function)){
+      clearInterval(stopwatch);
+      <button id="stop"> Stop </button>
+    });
+    var stopwatches = [];
+    $("#stop").click(function(){
+      stopwatches.forEach(function(stopwatch){
+        clearInterval(stopwatch);
+      });
+    }
